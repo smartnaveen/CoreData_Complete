@@ -57,8 +57,7 @@ class DataBaseHelper: NSObject {
     }
     
     
-    
-     // MARK:- Delete Data
+    // MARK:- Delete Data
     func deleteData(index: Int) -> [Student] {
         var studentData = fetchData()
         context?.delete(studentData[index])
