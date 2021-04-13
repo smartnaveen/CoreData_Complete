@@ -7,11 +7,16 @@
 
 import UIKit
 
+protocol DidDataPassProtocol: class {
+    func didDataPass(studentEntity: Student, isEdit: Bool, index: Int)
+}
+
 class ShowViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     var studentData = [Student]()
+    weak var delegate: DidDataPassProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,4 +42,19 @@ extension ShowViewController: UITableViewDataSource, UITableViewDelegate {
         return 130
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+           studentData = DataBaseHelper.shared.deleteData(index: indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didDataPass(studentEntity: studentData[indexPath.row], isEdit: true, index: indexPath.row)
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 }

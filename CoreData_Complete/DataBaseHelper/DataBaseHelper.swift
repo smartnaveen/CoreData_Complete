@@ -42,11 +42,34 @@ class DataBaseHelper: NSObject {
         return studentData
     }
     
-    
      // MARK:- Update Data
+    func updateData(studentModel: StudentModel, editIndex: Int) {
+        let studentData = fetchData()
+        studentData[editIndex].name = studentModel.studentName
+        studentData[editIndex].address = studentModel.studentAddress
+        studentData[editIndex].city = studentModel.studentCity
+        studentData[editIndex].mobile = studentModel.studentMobile
+        do {
+            try context?.save()
+        } catch  {
+            print("Error occur while updating data...")
+        }
+    }
+    
     
     
      // MARK:- Delete Data
-    
+    func deleteData(index: Int) -> [Student] {
+        var studentData = fetchData()
+        context?.delete(studentData[index])
+        studentData.remove(at: index)
+        
+        do {
+            try context?.save()
+        } catch  {
+            print("Error has occur when Deleting data...")
+        }
+        return studentData
+    }
     
 }

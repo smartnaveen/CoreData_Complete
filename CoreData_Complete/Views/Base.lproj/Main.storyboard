@@ -62,6 +62,37 @@
                                     <action selector="saveDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFQ-4g-LAB"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-qf-iQT">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVt-KH-GmL">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQg-HH-K8c">
+                                        <rect key="frame" x="277" y="0.0" width="97" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Show">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qB-3x-Bzv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zQg-HH-K8c" firstAttribute="top" secondItem="MF1-qf-iQT" secondAttribute="top" id="3A3-xv-0Lg"/>
+                                    <constraint firstItem="kVt-KH-GmL" firstAttribute="top" secondItem="MF1-qf-iQT" secondAttribute="top" id="Fc6-dp-0ha"/>
+                                    <constraint firstAttribute="bottom" secondItem="kVt-KH-GmL" secondAttribute="bottom" id="Fgn-rT-poB"/>
+                                    <constraint firstAttribute="trailing" secondItem="zQg-HH-K8c" secondAttribute="trailing" id="icb-0r-RdS"/>
+                                    <constraint firstAttribute="height" constant="50" id="qoS-V0-Vxq"/>
+                                    <constraint firstAttribute="bottom" secondItem="zQg-HH-K8c" secondAttribute="bottom" id="tGi-DV-qS6"/>
+                                    <constraint firstItem="kVt-KH-GmL" firstAttribute="leading" secondItem="MF1-qf-iQT" secondAttribute="leading" id="w2P-SH-mzf"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -70,7 +101,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uct-av-DFO" secondAttribute="trailing" constant="20" id="Ero-N9-wKX"/>
                             <constraint firstItem="uct-av-DFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HyN-Hq-Ued"/>
                             <constraint firstItem="CNT-yk-BTH" firstAttribute="top" secondItem="uct-av-DFO" secondAttribute="bottom" constant="45" id="Ijn-iK-gzF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MF1-qf-iQT" secondAttribute="trailing" constant="20" id="d7o-Vt-QIP"/>
+                            <constraint firstItem="MF1-qf-iQT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jri-DN-nLe"/>
                             <constraint firstItem="uct-av-DFO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="x49-1c-m11"/>
+                            <constraint firstItem="MF1-qf-iQT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yWf-7t-A4b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CNT-yk-BTH" secondAttribute="trailing" constant="30" id="zCY-TL-YmB"/>
                         </constraints>
                     </view>
@@ -81,7 +115,8 @@
                         <outlet property="mobileTextField" destination="Mtd-n5-qFj" id="Ubm-Js-BIF"/>
                         <outlet property="nameTextFiled" destination="hV4-yz-ddF" id="7y1-dz-aL4"/>
                         <outlet property="saveButton" destination="CNT-yk-BTH" id="Auq-XT-rMB"/>
-                        <segue destination="1HC-fS-C72" kind="show" id="lpy-ge-g5t"/>
+                        <outlet property="showButton" destination="zQg-HH-K8c" id="nRP-f8-BlF"/>
+                        <segue destination="1HC-fS-C72" kind="show" identifier="GoToShowVC" id="lpy-ge-g5t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
