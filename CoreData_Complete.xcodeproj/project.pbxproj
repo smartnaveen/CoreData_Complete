@@ -14,6 +14,14 @@
 		E76323A4262565CB00F0598B /* CoreData_Complete.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E76323A2262565CB00F0598B /* CoreData_Complete.xcdatamodeld */; };
 		E76323A6262565CC00F0598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76323A5262565CC00F0598B /* Assets.xcassets */; };
 		E76323A9262565CC00F0598B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76323A7262565CC00F0598B /* LaunchScreen.storyboard */; };
+		E76323B32625663B00F0598B /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76323B12625663B00F0598B /* Student+CoreDataClass.swift */; };
+		E76323B42625663B00F0598B /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76323B22625663B00F0598B /* Student+CoreDataProperties.swift */; };
+		E76323C0262566D000F0598B /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76323BF262566D000F0598B /* StudentModel.swift */; };
+		E76323C4262567A100F0598B /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76323C3262567A100F0598B /* DataBaseHelper.swift */; };
+		E76323CA2625694400F0598B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76323C82625691F00F0598B /* CoreData.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E76323CD26257CE800F0598B /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76323CC26257CE800F0598B /* ShowViewController.swift */; };
+		E76323D12625820C00F0598B /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76323CF2625820C00F0598B /* StudentTableViewCell.swift */; };
+		E76323D22625820C00F0598B /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76323D02625820C00F0598B /* StudentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		E76323A5262565CC00F0598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E76323A8262565CC00F0598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E76323AA262565CC00F0598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76323B12625663B00F0598B /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E76323B22625663B00F0598B /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E76323BF262566D000F0598B /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		E76323C3262567A100F0598B /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
+		E76323C82625691F00F0598B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E76323CC26257CE800F0598B /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		E76323CF2625820C00F0598B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		E76323D02625820C00F0598B /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76323CA2625694400F0598B /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,7 @@
 			children = (
 				E7632398262565CB00F0598B /* CoreData_Complete */,
 				E7632397262565CB00F0598B /* Products */,
+				E76323C72625691F00F0598B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +76,87 @@
 		E7632398262565CB00F0598B /* CoreData_Complete */ = {
 			isa = PBXGroup;
 			children = (
-				E7632399262565CB00F0598B /* AppDelegate.swift */,
-				E763239B262565CB00F0598B /* SceneDelegate.swift */,
-				E763239D262565CB00F0598B /* ViewController.swift */,
-				E763239F262565CB00F0598B /* Main.storyboard */,
+				E76323B62625664A00F0598B /* Delegates */,
+				E76323C22625674A00F0598B /* DataBaseHelper */,
+				E76323BE2625669D00F0598B /* Models */,
+				E76323BD2625669100F0598B /* Views */,
+				E76323B72625665600F0598B /* Controllers */,
+				E76323B92625666100F0598B /* Resources */,
 				E76323A5262565CC00F0598B /* Assets.xcassets */,
-				E76323A7262565CC00F0598B /* LaunchScreen.storyboard */,
 				E76323AA262565CC00F0598B /* Info.plist */,
 				E76323A2262565CB00F0598B /* CoreData_Complete.xcdatamodeld */,
 			);
 			path = CoreData_Complete;
+			sourceTree = "<group>";
+		};
+		E76323B62625664A00F0598B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E7632399262565CB00F0598B /* AppDelegate.swift */,
+				E763239B262565CB00F0598B /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		E76323B72625665600F0598B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E763239D262565CB00F0598B /* ViewController.swift */,
+				E76323CC26257CE800F0598B /* ShowViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E76323B92625666100F0598B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E76323BB2625667100F0598B /* CoreData_Enttity */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E76323BB2625667100F0598B /* CoreData_Enttity */ = {
+			isa = PBXGroup;
+			children = (
+				E76323B12625663B00F0598B /* Student+CoreDataClass.swift */,
+				E76323B22625663B00F0598B /* Student+CoreDataProperties.swift */,
+			);
+			path = CoreData_Enttity;
+			sourceTree = "<group>";
+		};
+		E76323BD2625669100F0598B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E763239F262565CB00F0598B /* Main.storyboard */,
+				E76323A7262565CC00F0598B /* LaunchScreen.storyboard */,
+				E76323CF2625820C00F0598B /* StudentTableViewCell.swift */,
+				E76323D02625820C00F0598B /* StudentTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E76323BE2625669D00F0598B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E76323BF262566D000F0598B /* StudentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E76323C22625674A00F0598B /* DataBaseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E76323C3262567A100F0598B /* DataBaseHelper.swift */,
+			);
+			path = DataBaseHelper;
+			sourceTree = "<group>";
+		};
+		E76323C72625691F00F0598B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76323C82625691F00F0598B /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +219,7 @@
 				E76323A9262565CC00F0598B /* LaunchScreen.storyboard in Resources */,
 				E76323A6262565CC00F0598B /* Assets.xcassets in Resources */,
 				E76323A1262565CB00F0598B /* Main.storyboard in Resources */,
+				E76323D22625820C00F0598B /* StudentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76323C0262566D000F0598B /* StudentModel.swift in Sources */,
+				E76323D12625820C00F0598B /* StudentTableViewCell.swift in Sources */,
+				E76323B42625663B00F0598B /* Student+CoreDataProperties.swift in Sources */,
 				E763239E262565CB00F0598B /* ViewController.swift in Sources */,
 				E76323A4262565CB00F0598B /* CoreData_Complete.xcdatamodeld in Sources */,
+				E76323C4262567A100F0598B /* DataBaseHelper.swift in Sources */,
+				E76323CD26257CE800F0598B /* ShowViewController.swift in Sources */,
 				E763239A262565CB00F0598B /* AppDelegate.swift in Sources */,
 				E763239C262565CB00F0598B /* SceneDelegate.swift in Sources */,
+				E76323B32625663B00F0598B /* Student+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
