@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        print(FileManager.default.urls(for: .preferencePanesDirectory, in: .userDomainMask).first!)
-        debugPrint("code adding in feature branch")
+        debugPrint("code adding in develop branch")
         return true
     }
 
