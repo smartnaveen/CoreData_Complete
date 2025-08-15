@@ -19,4 +19,5 @@ struct StudentModel {
     let gender: String
     let avatar: String
     let nickname: String
+    let principle_name: String
 }
