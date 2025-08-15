@@ -16,4 +16,5 @@ struct StudentModel {
     let id: String
     let fees: String
     let age: String
+    let gender: String
 }
