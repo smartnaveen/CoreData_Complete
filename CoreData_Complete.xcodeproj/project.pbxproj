@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		6BFB0C672E4EFEE1006A5C9F /* PrintJobQueue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB0C652E4EFEE1006A5C9F /* PrintJobQueue+CoreDataProperties.swift */; };
 		6BFB0C6A2E4EFF8E006A5C9F /* DelhiJalBoard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB0C682E4EFF8E006A5C9F /* DelhiJalBoard+CoreDataClass.swift */; };
 		6BFB0C6B2E4EFF8E006A5C9F /* DelhiJalBoard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB0C692E4EFF8E006A5C9F /* DelhiJalBoard+CoreDataProperties.swift */; };
+		6BFB0C782E4F02D3006A5C9F /* BSESRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB0C762E4F02D3006A5C9F /* BSESRecord+CoreDataClass.swift */; };
+		6BFB0C792E4F02D3006A5C9F /* BSESRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB0C772E4F02D3006A5C9F /* BSESRecord+CoreDataProperties.swift */; };
 		E763239A262565CB00F0598B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7632399262565CB00F0598B /* AppDelegate.swift */; };
 		E763239C262565CB00F0598B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763239B262565CB00F0598B /* SceneDelegate.swift */; };
 		E763239E262565CB00F0598B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763239D262565CB00F0598B /* ViewController.swift */; };
@@ -33,6 +35,8 @@
 		6BFB0C652E4EFEE1006A5C9F /* PrintJobQueue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrintJobQueue+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6BFB0C682E4EFF8E006A5C9F /* DelhiJalBoard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DelhiJalBoard+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6BFB0C692E4EFF8E006A5C9F /* DelhiJalBoard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DelhiJalBoard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6BFB0C762E4F02D3006A5C9F /* BSESRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BSESRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6BFB0C772E4F02D3006A5C9F /* BSESRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BSESRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E7632396262565CB00F0598B /* CoreData_Complete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData_Complete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7632399262565CB00F0598B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E763239B262565CB00F0598B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,10 +55,6 @@
 		E76323CF2625820C00F0598B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		E76323D02625820C00F0598B /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6BFB0C712E4F0247006A5C9F /* BSESRecord */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BSESRecord; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E7632393262565CB00F0598B /* Frameworks */ = {
@@ -84,6 +84,15 @@
 				6BFB0C692E4EFF8E006A5C9F /* DelhiJalBoard+CoreDataProperties.swift */,
 			);
 			path = DelhiJalBoard;
+			sourceTree = "<group>";
+		};
+		6BFB0C7B2E4F02F5006A5C9F /* BSESRecord */ = {
+			isa = PBXGroup;
+			children = (
+				6BFB0C762E4F02D3006A5C9F /* BSESRecord+CoreDataClass.swift */,
+				6BFB0C772E4F02D3006A5C9F /* BSESRecord+CoreDataProperties.swift */,
+			);
+			path = BSESRecord;
 			sourceTree = "<group>";
 		};
 		E763238D262565CB00F0598B = {
@@ -140,7 +149,7 @@
 		E76323B92625666100F0598B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6BFB0C712E4F0247006A5C9F /* BSESRecord */,
+				6BFB0C7B2E4F02F5006A5C9F /* BSESRecord */,
 				6BFB0C6C2E4EFFA3006A5C9F /* DelhiJalBoard */,
 				6BFB0C632E4EFEA9006A5C9F /* PrintJobQueue */,
 				E76323BB2625667100F0598B /* CoreData_Enttity */,
@@ -207,9 +216,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				6BFB0C712E4F0247006A5C9F /* BSESRecord */,
-			);
 			name = CoreData_Complete;
 			productName = CoreData_Complete;
 			productReference = E7632396262565CB00F0598B /* CoreData_Complete.app */;
@@ -266,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFB0C782E4F02D3006A5C9F /* BSESRecord+CoreDataClass.swift in Sources */,
+				6BFB0C792E4F02D3006A5C9F /* BSESRecord+CoreDataProperties.swift in Sources */,
 				E76323C0262566D000F0598B /* StudentModel.swift in Sources */,
 				E76323D12625820C00F0598B /* StudentTableViewCell.swift in Sources */,
 				E76323B42625663B00F0598B /* Student+CoreDataProperties.swift in Sources */,
