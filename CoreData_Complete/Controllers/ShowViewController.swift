@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DidDataPassProtocol: class {
+protocol DidDataPassProtocol: NSObject {
     func didDataPass(studentEntity: Student, isEdit: Bool, index: Int)
 }
 
