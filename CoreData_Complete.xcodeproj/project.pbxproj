@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,6 +51,10 @@
 		E76323CF2625820C00F0598B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		E76323D02625820C00F0598B /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6BFB0C712E4F0247006A5C9F /* BSESRecord */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BSESRecord; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E7632393262565CB00F0598B /* Frameworks */ = {
@@ -136,6 +140,7 @@
 		E76323B92625666100F0598B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6BFB0C712E4F0247006A5C9F /* BSESRecord */,
 				6BFB0C6C2E4EFFA3006A5C9F /* DelhiJalBoard */,
 				6BFB0C632E4EFEA9006A5C9F /* PrintJobQueue */,
 				E76323BB2625667100F0598B /* CoreData_Enttity */,
@@ -201,6 +206,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6BFB0C712E4F0247006A5C9F /* BSESRecord */,
 			);
 			name = CoreData_Complete;
 			productName = CoreData_Complete;
