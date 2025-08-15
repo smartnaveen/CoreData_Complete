@@ -15,4 +15,5 @@ struct StudentModel {
     let studentMobile: String
     let id: String
     let fees: String
+    let age: String
 }
