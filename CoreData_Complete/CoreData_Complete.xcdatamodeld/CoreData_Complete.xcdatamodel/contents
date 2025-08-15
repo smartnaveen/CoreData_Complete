@@ -14,6 +14,10 @@
         <attribute name="offline_id" optional="YES" attributeType="String"/>
         <attribute name="printer_name" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="RishiBurger" representedClassName="RishiBurger" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="product_name" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Student" representedClassName="Student" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String"/>
         <attribute name="city" optional="YES" attributeType="String"/>
