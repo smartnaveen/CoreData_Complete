@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     
     @IBAction func saveDataTapped(_ sender: UIButton) {
         if let studentName = nameTextFiled.text, let studentAddress =  addressTextFiled.text, let studentCity = cityTextFiled.text, let studentMobile = mobileTextField.text{
-            studentData = StudentModel(studentName: studentName, studentAddress: studentAddress, studentCity: studentCity, studentMobile: studentMobile, id: "", fees: "", age: "11", gender: "male", avatar: "1.png", nickname: "Pos User", principle_name: "")
+            studentData = StudentModel(studentName: studentName, studentAddress: studentAddress, studentCity: studentCity, studentMobile: studentMobile, id: "", fees: "", age: "11", gender: "male", avatar: "1.png", nickname: "Pos User", principle_name: "", school_name: "VS code")
             if let safeStudentData = studentData{
                 if isUpdate {
                     DataBaseHelper.shared.updateData(studentModel: studentData!, editIndex: editIndex)
