@@ -17,4 +17,5 @@ struct StudentModel {
     let fees: String
     let age: String
     let gender: String
+    let avatar: String
 }
