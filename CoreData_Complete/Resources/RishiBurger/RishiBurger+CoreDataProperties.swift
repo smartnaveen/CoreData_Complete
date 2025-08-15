@@ -18,6 +18,7 @@ extension RishiBurger {
 
     @NSManaged public var id: String?
     @NSManaged public var product_name: String?
+    @NSManaged public var modifier: String?
 
 }
 
