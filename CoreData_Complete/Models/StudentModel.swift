@@ -21,4 +21,6 @@ struct StudentModel {
     let nickname: String
     let principle_name: String
     let school_name: String
+    let father_name: String
+    let mother_name: String
 }
