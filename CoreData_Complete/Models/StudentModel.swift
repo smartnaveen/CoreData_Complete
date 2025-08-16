@@ -23,4 +23,6 @@ struct StudentModel {
     let school_name: String
     let father_name: String
     let mother_name: String
+    let is_active: String
+    let created_at: String
 }
